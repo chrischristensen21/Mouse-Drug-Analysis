@@ -1,4 +1,4 @@
-# Matplotlib Homework - The Power of Plots
+# Mouse Study Analysis Using Matplotlib
 
 ## Background
 
