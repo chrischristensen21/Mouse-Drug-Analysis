@@ -1,4 +1,4 @@
-# Mouse Drug Analysis Using Matplotlib
+# Mouse Drug Analysis Using Pandas and Matplotlib
 
 ## Overview
 
@@ -34,27 +34,34 @@ The goal of this project was to take two datasets and analyze it using python pa
 
 #### Distribution of Male and Female Mice
 
-* Generate a pie plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the distribution of female or male mice in the study.
+* The Count of Male and Female was determined
+* A pie plot was generated with the determined gender information using both Matplotlib and the built in Pandas pie plot.
 
-  * **NOTE:** These plots should look identical.
+#### Final Tumor Volumes
 
-* Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
+* The final tumor volume of each mouse across all the drug regimes  Capomulin, Ramicane, Infubinol, and Ceftamin was determined based off of the final timepoint for each mouse. 
+  * Greatest time point was determined and saved into a variable which was then merged back into the original cleaned mouse dataframe to get the the tumor volume at the final time point.
+  * Only pertinent columns remained while all other columns were dropped.
+  * The datframe was sorted to find most promising drug regimen.
 
-* Using Matplotlib, generate a box and whisker plot of the final tumor volume for all four treatment regimens and highlight any potential outliers in the plot by changing their color and style.
+#### Quartiles, IQR and Potential Outliers
 
-  **Hint**: All four box plots should be within the same figure. Use this [Matplotlib documentation page](https://matplotlib.org/gallery/pyplots/boxplot_demo_pyplot.html#sphx-glr-gallery-pyplots-boxplot-demo-pyplot-py) for help with changing the style of the outliers.
+* The most promising treatments were put into a list to perform for loop and later create plot labels
+* For Loop was created to calculate quartiles, IQR and any pontential outliers across the most promising drug regimens and was printed to the screen.
+* Matplotlib was used to create a box and whisker plot of the final tumor volume of the four treatments and potential outlier shown.
 
-* Select a mouse that was treated with Capomulin and generate a line plot of tumor volume vs. time point for that mouse.
+#### Line and Scatter Plots
 
-* Generate a scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
+*  A line plot of tumor volume vs. time point a mouse treated with Capomulin was created.
+* A scatter plot of mouse weight versus average tumor volume for the Capomulin was created.
 
-* Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
+#### Correlation and Regression
 
-* Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
+* The correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin was calculated and added to the mouse weight and tumor volume scatter plot
 
-Here are some final considerations:
+#### Observations and Insights
 
-* You must use proper labeling of your plots, to include properties such as: plot titles, axis labels, legend labels, _x_-axis and _y_-axis limits, etc.
-
-* See the [starter workbook](Pymaceuticals/pymaceuticals_starter.ipynb) for help on what modules to import and expected format of the notebook.
-
+- Three observations and/or insights were added:
+  1. In the Capomulin line graph you can clearer see a decrease in the tumor volume over time, it would be interesting to do a scatter plot of tumor volumes for each unique mouse vs time point and test the r-squared.
+  2. The scatter plot "tumor volume vs weight" clearly shows a correlation (albeit not perfect), this could lead to further analysis: You could divide each mouse according to various weight classes and see how the drug regimen affected each weigh class. Was each mouse given the same dose regardless of weight? Did weight affect the change in tumor volume? etc.
+  3. It would be interesting to pull out the potential outlier and see how this affects the trends/correlation.
