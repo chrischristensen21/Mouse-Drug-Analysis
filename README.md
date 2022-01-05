@@ -2,19 +2,37 @@
 
 ## Overview
 
-The goal of this project was to take a dataset and analyze it using python and matplotlib. The dataset was from a study to compare the performance of a drug (Capomulin)  to other drug regimens in their ability to treat squamous cell carcinoma (SCC) tumor growth in mice. In the study, 249 mice observed with SCC tumor growth were treated with Capomulin along with other drugs over the course of 45 days and the results were recorded.
+The goal of this project was to take two datasets and analyze it using python pandas  and matplotlib. The datasets were from a study to compare the performance of a drug (Capomulin) to other drug regimens in their ability to treat squamous cell carcinoma (SCC) tumor growth in mice. In the study, 249 mice observed with SCC tumor growth were treated with Capomulin along with other drugs over the course of 45 days and the results were recorded.
 
 ## Outline
 
-* Before beginning the analysis, check the data for any mouse ID with duplicate time points and remove any data associated with that mouse ID.
+#### Setup and Data Read
 
-* Use the cleaned data for the remaining steps.
+* The basic dependencies were read in:
+  * pandas, matplotlib, scipy stats, and numpy
+* Two CSV's containing the data were read in
+  * Mouse data and Study results
+* The mouse data and study data were combined into a single pandas dataframe for easier analysis.
 
-* Generate a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
+#### Data Cleanup
 
-* Generate a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows  the number of total mice for each treatment regimen throughout the course of the study.
+* First the number of unique mice was verified by using a .unique()
+* Any duplicated records were verified and viewed using a duplicated function and then dropped using a drop duplicates function
+* A quick summary of the information was printed to the screen to verify that the duplicated information was removed.
+* The cleaned data was then used in all other steps
 
-  * **NOTE:** These plots should look identical.
+#### Summary Statistics
+
+* A summary statistics table was generated that included the mean, median, variance, standard deviation, SEM of the tumor volume for each of the drugs.
+  * a groupby on tumor volume was performed for each statistic mentioned above, saved into a variable and a pandas dataframe was created with the information.
+* A table with the same information was created using a different method (aggregate method).
+
+#### Number of Mice per Drug Regimen
+
+* The number of mice used for each drug regimen was determined.
+* A bar plot was generated with that information using both Matplotlib and the built in Pandas plot.
+
+#### Distribution of Male and Female Mice
 
 * Generate a pie plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the distribution of female or male mice in the study.
 
