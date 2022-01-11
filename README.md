@@ -83,3 +83,8 @@ The goal of this project was to take two datasets and analyze it using python pa
   1. In the Capomulin line graph you can clearer see a decrease in the tumor volume over time, it would be interesting to do a scatter plot of tumor volumes for each unique mouse vs time point and test the r-squared.
   2. The scatter plot "tumor volume vs weight" clearly shows a correlation (albeit not perfect), this could lead to further analysis: You could divide each mouse according to various weight classes and see how the drug regimen affected each weigh class. Was each mouse given the same dose regardless of weight? Did weight affect the change in tumor volume? etc.
   3. It would be interesting to pull out the potential outlier and see how this affects the trends/correlation.
+
+---
+
+**Chris Christensen**
+**Email:** chrischristensen21@gmail.com
