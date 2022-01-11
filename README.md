@@ -75,7 +75,7 @@ The goal of this project was to take two datasets and analyze it using python pa
 #### Correlation and Regression
 
 * The correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin was calculated and added to the mouse weight and tumor volume scatter plot
-![Scatter Plot](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Correlation%20and%20Regression.png)
+![Correlation and Regression](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Correlation%20and%20Regression%20Plot.png)
 
 #### Observations and Insights
 
