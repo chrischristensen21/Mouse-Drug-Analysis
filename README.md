@@ -13,6 +13,7 @@ The goal of this project was to take two datasets and analyze it using python pa
 * Two CSV's containing the data were read in
   * Mouse data and Study results
 * The mouse data and study data were combined into a single pandas dataframe for easier analysis.
+![Set Up](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Set%20Up%20.png)
 
 #### Data Cleanup
 
