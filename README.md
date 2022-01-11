@@ -52,9 +52,10 @@ The goal of this project was to take two datasets and analyze it using python pa
 
 * The final tumor volume of each mouse across all the drug regimes  Capomulin, Ramicane, Infubinol, and Ceftamin was determined based off of the final timepoint for each mouse. 
   * Greatest time point was determined and saved into a variable which was then merged back into the original cleaned mouse dataframe to get the the tumor volume at the final time point.
+![Final Tumor Volume Code](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Final%20Tumor%20Volumes%20per%20Drug%20Regimen%20Code.png)
   * Only pertinent columns remained while all other columns were dropped.
   * The datframe was sorted to find most promising drug regimen.
-![Final Tumor Volume Code](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Final%20Tumor%20Volumes%20per%20Drug%20Regimen%20Code.png)
+![Sorted Drugs](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Tumor%20Volumes%20Sorted.png)
 
 #### Quartiles, IQR and Potential Outliers
 
