@@ -23,7 +23,7 @@ The goal of this project was to take two datasets and analyze it using python pa
 ![Duplicated Mice](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Duplicated%20Mice%20Records.png)
 ![Duplicated Mice](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Drop%20Duplicates.png)
 * A quick summary of the information was printed to the screen to verify that the duplicated information was removed.
-![Cleaned Summary](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Cleaned%20Data%20Summary.png)
+![Cleaned Summary](https://github.com/chrischristensen21/Mouse-Drug-Analysis-Using-Pandas-and-Matplotlib/blob/main/Screen%20Shots/Cleaned%20Data%20Summary%20Info.png)
 * The cleaned data was then used in all other steps
 
 #### Summary Statistics
