@@ -1,8 +1,8 @@
-# Mouse Drug Analysis Using Pandas and Matplotlib
+# Squamous Cell Carcinoma (SCC) in Mice and Potential Drug Treatments 
 
 ## Overview
 
-The goal of this project was to take two datasets and analyze it using python pandas  and matplotlib. The datasets were from a study to compare the performance of a drug (Capomulin) to other drug regimens in their ability to treat squamous cell carcinoma (SCC) tumor growth in mice. In the study, 249 mice observed with SCC tumor growth were treated with Capomulin along with other drugs over the course of 45 days and the results were recorded.
+The goal of this project was to take two datasets and analyze it using python pandas and matplotlib. The datasets compare the performance of a drug (Capomulin) to other drug regimens in their ability to treat squamous cell carcinoma (SCC) tumor growth in mice. In the study, 249 mice observed with SCC tumor growth were treated with Capomulin along with other drugs over the course of 45 days and the results were recorded.
 
 ## Outline
 
